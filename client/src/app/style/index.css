@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; 
+  }
+  
+  .leftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 40px;
+  }
+  
+  .appName {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    color: #000000; 
+  }
+  
+  .imageContainer {
+    position: relative;
+    animation: upDown 3s infinite ease-in-out;
+  }
+  
+  @keyframes upDown {
+    0%, 100% {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }
+  
+  .image {
+    width: 400px;
+    height: 400px; 
+    background-color: #ffffff;
+  }
+  
+  .introductionText {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 30px; 
+    color: #000000; 
+    line-height: 2; 
+  }
+  
+  .getStartedButton {
+    align-self: flex-start;
+    padding: 16px 32px; 
+    font-size: 1rem; 
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .getStartedButton:hover {
+    background-color: #444444;
+    transform: scale(1.05);
+  }
+  
+  button,
+  .imageContainer {
+    border-radius: 0;
+  }
